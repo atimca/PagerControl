@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'PagerControl'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'Another PagerControl'
  
   s.description      = <<-DESC
