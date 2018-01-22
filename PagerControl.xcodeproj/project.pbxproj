@@ -10,6 +10,24 @@
 		64E8785E201607100026D23D /* PagerControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64E87854201607100026D23D /* PagerControl.framework */; };
 		64E87863201607100026D23D /* PagerControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E87862201607100026D23D /* PagerControlTests.swift */; };
 		64E87865201607100026D23D /* PagerControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 64E87857201607100026D23D /* PagerControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		64E878822016080D0026D23D /* StripeCellPagerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E878712016080D0026D23D /* StripeCellPagerModel.swift */; };
+		64E878832016080D0026D23D /* StripeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E878722016080D0026D23D /* StripeCell.swift */; };
+		64E878842016080D0026D23D /* ImageTitleCellPagerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E878742016080D0026D23D /* ImageTitleCellPagerModel.swift */; };
+		64E878852016080D0026D23D /* ImageTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E878752016080D0026D23D /* ImageTitleCell.swift */; };
+		64E878862016080D0026D23D /* SpartakStripePagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E878772016080D0026D23D /* SpartakStripePagerView.swift */; };
+		64E878872016080D0026D23D /* CellEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8787A2016080D0026D23D /* CellEntity.swift */; };
+		64E878882016080D0026D23D /* PagerControlViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8787B2016080D0026D23D /* PagerControlViewCellModel.swift */; };
+		64E878892016080D0026D23D /* PagerControlViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8787C2016080D0026D23D /* PagerControlViewModel.swift */; };
+		64E8788A2016080D0026D23D /* PagerControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8787D2016080D0026D23D /* PagerControlView.swift */; };
+		64E8788B2016080D0026D23D /* PagerControlCellDealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8787F2016080D0026D23D /* PagerControlCellDealer.swift */; };
+		64E8788C2016080D0026D23D /* PagerControlLineDealer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E878802016080D0026D23D /* PagerControlLineDealer.swift */; };
+		64E8788D2016080D0026D23D /* PagerControlViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E878812016080D0026D23D /* PagerControlViewDelegate.swift */; };
+		64E87890201608DC0026D23D /* Setupable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8788F201608DC0026D23D /* Setupable.swift */; };
+		64E878922016090C0026D23D /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E878912016090C0026D23D /* Collection.swift */; };
+		64E87894201609450026D23D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E87893201609450026D23D /* String.swift */; };
+		64E8789620160D740026D23D /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8789520160D740026D23D /* UIView.swift */; };
+		64E8789820160DC10026D23D /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8789720160DC10026D23D /* UIFont.swift */; };
+		64E8789A20160E0E0026D23D /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8789920160E0E0026D23D /* NSObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +47,24 @@
 		64E8785D201607100026D23D /* PagerControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PagerControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E87862201607100026D23D /* PagerControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerControlTests.swift; sourceTree = "<group>"; };
 		64E87864201607100026D23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64E878712016080D0026D23D /* StripeCellPagerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StripeCellPagerModel.swift; sourceTree = "<group>"; };
+		64E878722016080D0026D23D /* StripeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StripeCell.swift; sourceTree = "<group>"; };
+		64E878742016080D0026D23D /* ImageTitleCellPagerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTitleCellPagerModel.swift; sourceTree = "<group>"; };
+		64E878752016080D0026D23D /* ImageTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTitleCell.swift; sourceTree = "<group>"; };
+		64E878772016080D0026D23D /* SpartakStripePagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpartakStripePagerView.swift; sourceTree = "<group>"; };
+		64E8787A2016080D0026D23D /* CellEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellEntity.swift; sourceTree = "<group>"; };
+		64E8787B2016080D0026D23D /* PagerControlViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerControlViewCellModel.swift; sourceTree = "<group>"; };
+		64E8787C2016080D0026D23D /* PagerControlViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerControlViewModel.swift; sourceTree = "<group>"; };
+		64E8787D2016080D0026D23D /* PagerControlView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerControlView.swift; sourceTree = "<group>"; };
+		64E8787F2016080D0026D23D /* PagerControlCellDealer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerControlCellDealer.swift; sourceTree = "<group>"; };
+		64E878802016080D0026D23D /* PagerControlLineDealer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerControlLineDealer.swift; sourceTree = "<group>"; };
+		64E878812016080D0026D23D /* PagerControlViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerControlViewDelegate.swift; sourceTree = "<group>"; };
+		64E8788F201608DC0026D23D /* Setupable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setupable.swift; sourceTree = "<group>"; };
+		64E878912016090C0026D23D /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
+		64E87893201609450026D23D /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		64E8789520160D740026D23D /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		64E8789720160DC10026D23D /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		64E8789920160E0E0026D23D /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +89,7 @@
 		64E8784A201607100026D23D = {
 			isa = PBXGroup;
 			children = (
+				64E8786E201607EC0026D23D /* Source */,
 				64E87856201607100026D23D /* Supporting Files */,
 				64E87861201607100026D23D /* Tests */,
 				64E87855201607100026D23D /* Products */,
@@ -84,6 +121,95 @@
 				64E87864201607100026D23D /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		64E8786E201607EC0026D23D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				64E8786F2016080D0026D23D /* PagerControl */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		64E8786F2016080D0026D23D /* PagerControl */ = {
+			isa = PBXGroup;
+			children = (
+				64E8788E201608A20026D23D /* Extensions */,
+				64E878702016080D0026D23D /* StripeCell */,
+				64E878732016080D0026D23D /* ImageTitleCell */,
+				64E878762016080D0026D23D /* SpartakStripePagerView */,
+				64E878782016080D0026D23D /* Control */,
+			);
+			path = PagerControl;
+			sourceTree = "<group>";
+		};
+		64E878702016080D0026D23D /* StripeCell */ = {
+			isa = PBXGroup;
+			children = (
+				64E878712016080D0026D23D /* StripeCellPagerModel.swift */,
+				64E878722016080D0026D23D /* StripeCell.swift */,
+			);
+			path = StripeCell;
+			sourceTree = "<group>";
+		};
+		64E878732016080D0026D23D /* ImageTitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				64E878742016080D0026D23D /* ImageTitleCellPagerModel.swift */,
+				64E878752016080D0026D23D /* ImageTitleCell.swift */,
+			);
+			path = ImageTitleCell;
+			sourceTree = "<group>";
+		};
+		64E878762016080D0026D23D /* SpartakStripePagerView */ = {
+			isa = PBXGroup;
+			children = (
+				64E878772016080D0026D23D /* SpartakStripePagerView.swift */,
+			);
+			path = SpartakStripePagerView;
+			sourceTree = "<group>";
+		};
+		64E878782016080D0026D23D /* Control */ = {
+			isa = PBXGroup;
+			children = (
+				64E878792016080D0026D23D /* Models */,
+				64E8787E2016080D0026D23D /* Delegates */,
+				64E8787D2016080D0026D23D /* PagerControlView.swift */,
+			);
+			path = Control;
+			sourceTree = "<group>";
+		};
+		64E878792016080D0026D23D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				64E8787A2016080D0026D23D /* CellEntity.swift */,
+				64E8787B2016080D0026D23D /* PagerControlViewCellModel.swift */,
+				64E8787C2016080D0026D23D /* PagerControlViewModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		64E8787E2016080D0026D23D /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				64E8787F2016080D0026D23D /* PagerControlCellDealer.swift */,
+				64E878802016080D0026D23D /* PagerControlLineDealer.swift */,
+				64E878812016080D0026D23D /* PagerControlViewDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		64E8788E201608A20026D23D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				64E8788F201608DC0026D23D /* Setupable.swift */,
+				64E878912016090C0026D23D /* Collection.swift */,
+				64E87893201609450026D23D /* String.swift */,
+				64E8789520160D740026D23D /* UIView.swift */,
+				64E8789720160DC10026D23D /* UIFont.swift */,
+				64E8789920160E0E0026D23D /* NSObject.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +322,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64E8789620160D740026D23D /* UIView.swift in Sources */,
+				64E8789820160DC10026D23D /* UIFont.swift in Sources */,
+				64E878872016080D0026D23D /* CellEntity.swift in Sources */,
+				64E8789A20160E0E0026D23D /* NSObject.swift in Sources */,
+				64E8788C2016080D0026D23D /* PagerControlLineDealer.swift in Sources */,
+				64E878852016080D0026D23D /* ImageTitleCell.swift in Sources */,
+				64E878892016080D0026D23D /* PagerControlViewModel.swift in Sources */,
+				64E878832016080D0026D23D /* StripeCell.swift in Sources */,
+				64E878922016090C0026D23D /* Collection.swift in Sources */,
+				64E8788A2016080D0026D23D /* PagerControlView.swift in Sources */,
+				64E878862016080D0026D23D /* SpartakStripePagerView.swift in Sources */,
+				64E878822016080D0026D23D /* StripeCellPagerModel.swift in Sources */,
+				64E878842016080D0026D23D /* ImageTitleCellPagerModel.swift in Sources */,
+				64E8788B2016080D0026D23D /* PagerControlCellDealer.swift in Sources */,
+				64E878882016080D0026D23D /* PagerControlViewCellModel.swift in Sources */,
+				64E87894201609450026D23D /* String.swift in Sources */,
+				64E87890201608DC0026D23D /* Setupable.swift in Sources */,
+				64E8788D2016080D0026D23D /* PagerControlViewDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +520,7 @@
 		64E8786C201607100026D23D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KSPVBX34L6;
 				INFOPLIST_FILE = PagerControlTests/Info.plist;
@@ -390,6 +535,7 @@
 		64E8786D201607100026D23D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KSPVBX34L6;
 				INFOPLIST_FILE = PagerControlTests/Info.plist;
