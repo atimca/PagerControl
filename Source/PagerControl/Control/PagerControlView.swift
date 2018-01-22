@@ -14,7 +14,7 @@ open class PagerControlView: UIView {
     
     private var collectionView: UICollectionView!
     
-    private(set) var selectedItem: Int = 0
+    private(set) public var selectedItem: Int = 0
     open weak var delegate: PagerControlViewDelegate?
     
     private lazy var cellDealer: PagerControlCellDealer = {

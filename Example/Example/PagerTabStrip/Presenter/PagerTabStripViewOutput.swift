@@ -1,6 +1,6 @@
 //
-//  Setupable.swift
-//  PagerControl
+//  PagerTabStripViewOutput.swift
+//  Example
 //
 //  Created by Maxim Smirnov on 22/01/2018.
 //  Copyright © 2018 Maxim Smirnov. All rights reserved.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-public protocol Setupable: class {
-    func setup(_ object: Any)
+protocol PagerTabStripViewOutput {
+    func viewIsReady()
 }

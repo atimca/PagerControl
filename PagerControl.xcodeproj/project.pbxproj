@@ -14,7 +14,6 @@
 		64E878832016080D0026D23D /* StripeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E878722016080D0026D23D /* StripeCell.swift */; };
 		64E878842016080D0026D23D /* ImageTitleCellPagerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E878742016080D0026D23D /* ImageTitleCellPagerModel.swift */; };
 		64E878852016080D0026D23D /* ImageTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E878752016080D0026D23D /* ImageTitleCell.swift */; };
-		64E878862016080D0026D23D /* SpartakStripePagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E878772016080D0026D23D /* SpartakStripePagerView.swift */; };
 		64E878872016080D0026D23D /* CellEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8787A2016080D0026D23D /* CellEntity.swift */; };
 		64E878882016080D0026D23D /* PagerControlViewCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8787B2016080D0026D23D /* PagerControlViewCellModel.swift */; };
 		64E878892016080D0026D23D /* PagerControlViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8787C2016080D0026D23D /* PagerControlViewModel.swift */; };
@@ -26,8 +25,7 @@
 		64E878922016090C0026D23D /* Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E878912016090C0026D23D /* Collection.swift */; };
 		64E87894201609450026D23D /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E87893201609450026D23D /* String.swift */; };
 		64E8789620160D740026D23D /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8789520160D740026D23D /* UIView.swift */; };
-		64E8789820160DC10026D23D /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8789720160DC10026D23D /* UIFont.swift */; };
-		64E8789A20160E0E0026D23D /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8789920160E0E0026D23D /* NSObject.swift */; };
+		64E8790B201625240026D23D /* PagerControlLineDealerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8790A201625240026D23D /* PagerControlLineDealerModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +49,6 @@
 		64E878722016080D0026D23D /* StripeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StripeCell.swift; sourceTree = "<group>"; };
 		64E878742016080D0026D23D /* ImageTitleCellPagerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTitleCellPagerModel.swift; sourceTree = "<group>"; };
 		64E878752016080D0026D23D /* ImageTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTitleCell.swift; sourceTree = "<group>"; };
-		64E878772016080D0026D23D /* SpartakStripePagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpartakStripePagerView.swift; sourceTree = "<group>"; };
 		64E8787A2016080D0026D23D /* CellEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellEntity.swift; sourceTree = "<group>"; };
 		64E8787B2016080D0026D23D /* PagerControlViewCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerControlViewCellModel.swift; sourceTree = "<group>"; };
 		64E8787C2016080D0026D23D /* PagerControlViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerControlViewModel.swift; sourceTree = "<group>"; };
@@ -63,8 +60,7 @@
 		64E878912016090C0026D23D /* Collection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection.swift; sourceTree = "<group>"; };
 		64E87893201609450026D23D /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		64E8789520160D740026D23D /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		64E8789720160DC10026D23D /* UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
-		64E8789920160E0E0026D23D /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
+		64E8790A201625240026D23D /* PagerControlLineDealerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerControlLineDealerModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,9 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				64E8788E201608A20026D23D /* Extensions */,
-				64E878702016080D0026D23D /* StripeCell */,
-				64E878732016080D0026D23D /* ImageTitleCell */,
-				64E878762016080D0026D23D /* SpartakStripePagerView */,
+				64E878D7201619CE0026D23D /* Additions */,
 				64E878782016080D0026D23D /* Control */,
 			);
 			path = PagerControl;
@@ -159,14 +153,6 @@
 				64E878752016080D0026D23D /* ImageTitleCell.swift */,
 			);
 			path = ImageTitleCell;
-			sourceTree = "<group>";
-		};
-		64E878762016080D0026D23D /* SpartakStripePagerView */ = {
-			isa = PBXGroup;
-			children = (
-				64E878772016080D0026D23D /* SpartakStripePagerView.swift */,
-			);
-			path = SpartakStripePagerView;
 			sourceTree = "<group>";
 		};
 		64E878782016080D0026D23D /* Control */ = {
@@ -195,6 +181,7 @@
 			children = (
 				64E8787F2016080D0026D23D /* PagerControlCellDealer.swift */,
 				64E878802016080D0026D23D /* PagerControlLineDealer.swift */,
+				64E8790A201625240026D23D /* PagerControlLineDealerModel.swift */,
 				64E878812016080D0026D23D /* PagerControlViewDelegate.swift */,
 			);
 			path = Delegates;
@@ -206,10 +193,17 @@
 				64E878912016090C0026D23D /* Collection.swift */,
 				64E87893201609450026D23D /* String.swift */,
 				64E8789520160D740026D23D /* UIView.swift */,
-				64E8789720160DC10026D23D /* UIFont.swift */,
-				64E8789920160E0E0026D23D /* NSObject.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		64E878D7201619CE0026D23D /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				64E878702016080D0026D23D /* StripeCell */,
+				64E878732016080D0026D23D /* ImageTitleCell */,
+			);
+			path = Additions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,16 +317,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				64E8789620160D740026D23D /* UIView.swift in Sources */,
-				64E8789820160DC10026D23D /* UIFont.swift in Sources */,
 				64E878872016080D0026D23D /* CellEntity.swift in Sources */,
-				64E8789A20160E0E0026D23D /* NSObject.swift in Sources */,
 				64E8788C2016080D0026D23D /* PagerControlLineDealer.swift in Sources */,
 				64E878852016080D0026D23D /* ImageTitleCell.swift in Sources */,
 				64E878892016080D0026D23D /* PagerControlViewModel.swift in Sources */,
 				64E878832016080D0026D23D /* StripeCell.swift in Sources */,
+				64E8790B201625240026D23D /* PagerControlLineDealerModel.swift in Sources */,
 				64E878922016090C0026D23D /* Collection.swift in Sources */,
 				64E8788A2016080D0026D23D /* PagerControlView.swift in Sources */,
-				64E878862016080D0026D23D /* SpartakStripePagerView.swift in Sources */,
 				64E878822016080D0026D23D /* StripeCellPagerModel.swift in Sources */,
 				64E878842016080D0026D23D /* ImageTitleCellPagerModel.swift in Sources */,
 				64E8788B2016080D0026D23D /* PagerControlCellDealer.swift in Sources */,
@@ -487,6 +479,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MS.PagerControl;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -508,6 +501,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "$(SRCROOT)/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MS.PagerControl;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

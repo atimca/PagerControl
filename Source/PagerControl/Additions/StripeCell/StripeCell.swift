@@ -14,11 +14,11 @@ open class StripeCell: UICollectionViewCell {
     
     public struct Model {
         
-        var textColor: UIColor
-        var font: UIFont
-        var text: String
+        public var textColor: UIColor
+        public var font: UIFont
+        public var text: String
         
-        init(textColor: UIColor = .black, font: UIFont = UIFont.systemFont(ofSize: 17.0), text: String) {
+        public init(textColor: UIColor = .black, font: UIFont = UIFont.systemFont(ofSize: 17.0), text: String) {
             
             self.textColor = textColor
             self.font = font

@@ -8,18 +8,20 @@
 
 import UIKit
 
-class ImageTitleCell: UICollectionViewCell {
+open class ImageTitleCell: UICollectionViewCell {
+    
+    public static let height: CGFloat = 70.0
     
     // MARK: - Models
     
-    struct Model {
+    public struct Model {
         
-        let textColor: UIColor
-        let font: UIFont
-        let text: String
-        let image: UIImage
+        public let textColor: UIColor
+        public let font: UIFont
+        public let text: String
+        public let image: UIImage
         
-        init(textColor: UIColor = .black, font: UIFont = UIFont.systemFont(ofSize: 17.0), text: String, image: UIImage) {
+        public init(textColor: UIColor = .black, font: UIFont = UIFont.systemFont(ofSize: 17.0), text: String, image: UIImage) {
             
             self.textColor = textColor
             self.font = font
@@ -37,12 +39,12 @@ class ImageTitleCell: UICollectionViewCell {
     
     // MARK: - init
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
@@ -71,7 +73,7 @@ class ImageTitleCell: UICollectionViewCell {
 
 extension ImageTitleCell: Setupable {
     
-    func setup(_ object: Any) {
+    public func setup(_ object: Any) {
         
         guard let model = object as? Model else {
             return

@@ -10,11 +10,11 @@ import Foundation
 
 public struct PagerControlViewModel {
     
-    let cellModel: PagerControlViewCellModel
-    var lineModel: PagerControlLineDealerModel?
-    let cellEntity: CellEntity
+    public let cellModel: PagerControlViewCellModel
+    public var lineModel: PagerControlLineDealerModel?
+    public let cellEntity: CellEntity
     
-    init(cellModel: PagerControlViewCellModel, lineModel: PagerControlLineDealerModel? = nil, cellEntity: CellEntity) {
+    public init(cellModel: PagerControlViewCellModel, lineModel: PagerControlLineDealerModel? = nil, cellEntity: CellEntity) {
         
         self.cellModel = cellModel
         self.lineModel = lineModel

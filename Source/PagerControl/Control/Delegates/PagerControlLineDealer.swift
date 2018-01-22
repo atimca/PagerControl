@@ -15,13 +15,6 @@ protocol PagerControlLineDealer {
     
 }
 
-struct PagerControlLineDealerModel {
-    
-    let height: CGFloat
-    let color: UIColor
-    
-}
-
 class PagerControlLineDealerImplementation {
     
     private var line: CALayer?
