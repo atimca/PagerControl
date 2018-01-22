@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol PagerControlViewCellModel {
+public protocol PagerControlViewCellModel {
     
     var cellModels: [Any] { get }
     var selectedCellModels: [Any] { get }
@@ -19,7 +19,7 @@ protocol PagerControlViewCellModel {
     
 }
 
-extension PagerControlViewCellModel {
+public extension PagerControlViewCellModel {
     
     var superViewFrame: CGRect {
         return .zero

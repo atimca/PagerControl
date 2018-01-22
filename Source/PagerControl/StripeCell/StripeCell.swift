@@ -8,11 +8,11 @@
 
 import UIKit
 
-class StripeCell: UICollectionViewCell {
+open class StripeCell: UICollectionViewCell {
     
     // MARK: - Models
     
-    struct Model {
+    public struct Model {
         
         var textColor: UIColor
         var font: UIFont
@@ -34,12 +34,12 @@ class StripeCell: UICollectionViewCell {
     
     // MARK: - init
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
     }
@@ -59,7 +59,7 @@ class StripeCell: UICollectionViewCell {
 
 extension StripeCell: Setupable {
     
-    func setup(_ object: Any) {
+    public func setup(_ object: Any) {
         
         guard let model = object as? Model else {
             return

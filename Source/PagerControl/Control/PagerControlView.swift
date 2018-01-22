@@ -8,14 +8,14 @@
 
 import UIKit
 
-class PagerControlView: UIView {
+open class PagerControlView: UIView {
     
     // MARK: - Properties
     
     private var collectionView: UICollectionView!
     
     private(set) var selectedItem: Int = 0
-    weak var delegate: PagerControlViewDelegate?
+    open weak var delegate: PagerControlViewDelegate?
     
     private lazy var cellDealer: PagerControlCellDealer = {
         return PagerControllCellDealerImplementation()
@@ -44,7 +44,7 @@ class PagerControlView: UIView {
     
     // MARK: - LifeCircle
 
-    override func layoutSubviews() {
+    override open func layoutSubviews() {
         super.layoutSubviews()
 
         let cellFrame = collectionView?.cellForItem(at: IndexPath(row: selectedItem, section: 0))?.frame
@@ -64,7 +64,7 @@ class PagerControlView: UIView {
         setupCollectionView()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         
         setupCollectionView()
@@ -95,7 +95,7 @@ class PagerControlView: UIView {
     
     //MARK: - Public
     
-    func setup(withModel viewModel: PagerControlViewModel) {
+    open func setup(withModel viewModel: PagerControlViewModel) {
         
         self.viewModel = viewModel
         setupLine()
@@ -105,7 +105,7 @@ class PagerControlView: UIView {
         
     }
     
-    func selectItem(_ index: Int) {
+    open func selectItem(_ index: Int) {
         scroll(toIndex: index)
     }
     
@@ -172,7 +172,7 @@ class PagerControlView: UIView {
 //MARK: - UICollectionViewDelegateFlowLayout
 extension PagerControlView: UICollectionViewDelegateFlowLayout {
     
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         scroll(toIndex: indexPath.item)
         
@@ -184,7 +184,7 @@ extension PagerControlView: UICollectionViewDelegateFlowLayout {
         
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         guard let viewModel = viewModel else {
             return .zero
@@ -202,11 +202,11 @@ extension PagerControlView: UICollectionViewDelegateFlowLayout {
 //MARK: - UICollectionViewDataSource
 extension PagerControlView: UICollectionViewDataSource {
     
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return viewModel?.cellModel.count ?? 0
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = cellDealer.collectionView(collectionView, cellForItemAt: indexPath)
         
@@ -217,7 +217,7 @@ extension PagerControlView: UICollectionViewDataSource {
         return cell
     }
     
-    func setupCells(forCollectionView collectionView: UICollectionView, withIndexPaxes indexPaxes: [IndexPath], animate: Bool = false) {
+    private func setupCells(forCollectionView collectionView: UICollectionView, withIndexPaxes indexPaxes: [IndexPath], animate: Bool = false) {
         
         for indexPath in indexPaxes {
             
@@ -231,7 +231,7 @@ extension PagerControlView: UICollectionViewDataSource {
         
     }
     
-    func setup(cell: Setupable, forIndexPath indexPath: IndexPath) {
+    private func setup(cell: Setupable, forIndexPath indexPath: IndexPath) {
         
         guard let cellModel = viewModel?.cellModel else {
             return

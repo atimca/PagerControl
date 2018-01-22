@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol PagerControlViewDelegate: class {
+public protocol PagerControlViewDelegate: class {
     
     /// Optional
     func didSwitchToItem(withIndex index: Int)
@@ -16,7 +16,7 @@ protocol PagerControlViewDelegate: class {
     
 }
 
-extension PagerControlViewDelegate {
+public extension PagerControlViewDelegate {
     func didSwitchToItem(withIndex index: Int) {}
     func didSwitchToItemAfterAnimation(withIndex index: Int) {}
 }

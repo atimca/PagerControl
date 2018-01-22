@@ -8,11 +8,11 @@
 
 import UIKit
 
-class SpartakStripePagerView: UIView {
+open class SpartakStripePagerView: UIView {
     
     //MARK: - Appearance
     
-    static let height: CGFloat = 52.0
+    public static let height: CGFloat = 52.0
     
     private struct Appearance {
         
@@ -41,12 +41,12 @@ class SpartakStripePagerView: UIView {
     
     //MARK: - Init
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         drawSelf()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         drawSelf()
     }
@@ -68,11 +68,11 @@ class SpartakStripePagerView: UIView {
     
     //MARK: - Interface
     
-    var selectedItem: Int {
+    public var selectedItem: Int {
         return pagerControl.selectedItem
     }
     
-    weak var delegate: PagerControlViewDelegate? {
+    public weak var delegate: PagerControlViewDelegate? {
         
         didSet {
             pagerControl.delegate = delegate
@@ -80,11 +80,11 @@ class SpartakStripePagerView: UIView {
         
     }
     
-    func selectItem(_ index: Int) {
+    public func selectItem(_ index: Int) {
         pagerControl.selectItem(index)
     }
     
-    func setup(withTabTitles titles: [String]) {
+    public func setup(withTabTitles titles: [String]) {
         
         var cellModels: [StripeCell.Model] = []
         var selectedCellModels: [StripeCell.Model] = []

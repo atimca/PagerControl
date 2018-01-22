@@ -8,14 +8,14 @@
 
 import Foundation
 
-struct CellEntity {
+public struct CellEntity {
     
-    let isNib: Bool
-    let reuseIdentifier: String
-    let classType: AnyClass?
-    let nibName: String?
+    public let isNib: Bool
+    public let reuseIdentifier: String
+    public let classType: AnyClass?
+    public let nibName: String?
     
-    init(isNib: Bool, reuseIdentifier: String, nibName: String) {
+    public init(isNib: Bool, reuseIdentifier: String, nibName: String) {
         
         self.isNib = isNib
         self.reuseIdentifier = reuseIdentifier
@@ -24,7 +24,7 @@ struct CellEntity {
         
     }
     
-    init(isNib: Bool, reuseIdentifier: String, classType: AnyClass) {
+    public init(isNib: Bool, reuseIdentifier: String, classType: AnyClass) {
         
         self.isNib = isNib
         self.reuseIdentifier = reuseIdentifier

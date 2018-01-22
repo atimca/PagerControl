@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct PagerControlViewModel {
+public struct PagerControlViewModel {
     
     let cellModel: PagerControlViewCellModel
     var lineModel: PagerControlLineDealerModel?

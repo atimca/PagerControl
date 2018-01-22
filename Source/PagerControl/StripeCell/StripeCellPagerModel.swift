@@ -8,11 +8,11 @@
 
 import UIKit
 
-class StripeCellPagerModel {
+open class StripeCellPagerModel {
     
-    let cellModels: [Any]
-    let selectedCellModels: [Any]
-    let superViewFrame: CGRect
+    public let cellModels: [Any]
+    public let selectedCellModels: [Any]
+    public let superViewFrame: CGRect
     
     private var models: [StripeCell.Model]? {
         return cellModels as? [StripeCell.Model]
@@ -27,7 +27,7 @@ class StripeCellPagerModel {
     
     //MARK: - Init
     
-    init(cellModels: [Any], selectedCellModels: [Any], superViewFrame: CGRect) {
+    public init(cellModels: [Any], selectedCellModels: [Any], superViewFrame: CGRect) {
      
         self.cellModels = cellModels
         self.selectedCellModels = selectedCellModels
@@ -40,11 +40,11 @@ class StripeCellPagerModel {
 
 extension StripeCellPagerModel: PagerControlViewCellModel {
     
-    func width(forIndex index: Int) -> CGFloat {
+    public func width(forIndex index: Int) -> CGFloat {
         return cellsWidth[safe: index] ?? 0.0
     }
     
-    func selectedWidth(forIndex index: Int) -> CGFloat {
+    public func selectedWidth(forIndex index: Int) -> CGFloat {
         return selectedCellsWidth[safe: index] ?? 0.0
     }
     

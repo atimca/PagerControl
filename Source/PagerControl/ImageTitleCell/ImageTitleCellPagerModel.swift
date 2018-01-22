@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ImageTitleCellPagerModel {
+open class ImageTitleCellPagerModel {
     
-    let cellModels: [Any]
-    let selectedCellModels: [Any]
+    public let cellModels: [Any]
+    public let selectedCellModels: [Any]
     
     private var models: [ImageTitleCell.Model] {
         return cellModels as? [ImageTitleCell.Model] ?? []
@@ -27,7 +27,7 @@ class ImageTitleCellPagerModel {
     
     //MARK: - Init
     
-    init(cellModels: [Any], selectedCellModels: [Any]) {
+    public init(cellModels: [Any], selectedCellModels: [Any]) {
         
         self.cellModels = cellModels
         self.selectedCellModels = selectedCellModels
@@ -52,11 +52,11 @@ class ImageTitleCellPagerModel {
 //MARK: - PagerControlViewCellModel
 extension ImageTitleCellPagerModel: PagerControlViewCellModel {
     
-    func width(forIndex index: Int) -> CGFloat {
+    public func width(forIndex index: Int) -> CGFloat {
         return cellWidth
     }
     
-    func selectedWidth(forIndex index: Int) -> CGFloat {
+    public func selectedWidth(forIndex index: Int) -> CGFloat {
         return cellWidth
     }
     

@@ -175,6 +175,7 @@
 				64E878792016080D0026D23D /* Models */,
 				64E8787E2016080D0026D23D /* Delegates */,
 				64E8787D2016080D0026D23D /* PagerControlView.swift */,
+				64E8788F201608DC0026D23D /* Setupable.swift */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -202,7 +203,6 @@
 		64E8788E201608A20026D23D /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				64E8788F201608DC0026D23D /* Setupable.swift */,
 				64E878912016090C0026D23D /* Collection.swift */,
 				64E87893201609450026D23D /* String.swift */,
 				64E8789520160D740026D23D /* UIView.swift */,
