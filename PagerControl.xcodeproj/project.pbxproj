@@ -122,6 +122,7 @@
 		64E8786E201607EC0026D23D /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				64E878D7201619CE0026D23D /* Additions */,
 				64E8786F2016080D0026D23D /* PagerControl */,
 			);
 			path = Source;
@@ -131,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				64E8788E201608A20026D23D /* Extensions */,
-				64E878D7201619CE0026D23D /* Additions */,
 				64E878782016080D0026D23D /* Control */,
 			);
 			path = PagerControl;
