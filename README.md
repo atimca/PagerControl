@@ -10,7 +10,7 @@ Simple and highly customizable iOS page control, in Swift.
 
 ## Usage
 
-You can create facades above StripeCell or ImageTitleCell or use them directly. Everything what you need, you can find in the [Example](https://github.com/Atimca/PagerControl/tree/master/Example/Example) folder.
+You can create facades above PagerControlView, StripeCell or ImageTitleCell or use them directly. Everything what you need, you can find in the [Example](https://github.com/Atimca/PagerControl/tree/master/Example/Example) folder.
 
 ## Installation
 
