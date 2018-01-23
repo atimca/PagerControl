@@ -1,7 +1,7 @@
 # PagerControl
 
 [![Version](https://img.shields.io/cocoapods/v/PagerControl.svg?style=flat)](http://cocoadocs.org/docsets/PagerControl/)
-[![License](https://img.shields.io/cocoapods/l/PagerControl.svg?style=flat)](https://github.com/ElaWorkshop/PagerControl/blob/master/LICENSE)
+[![License](https://img.shields.io/cocoapods/l/PagerControl.svg?style=flat)](https://github.com/Atimca/PagerControl/blob/master/LICENSE)
 
 Simple and highly customizable iOS page control, in Swift.
 
