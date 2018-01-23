@@ -1,32 +1,30 @@
-# NetworkClient
+# PagerControl
 
-[![CI Status](http://img.shields.io/travis/Maxim Smirnov/NetworkClient.svg?style=flat)](https://travis-ci.org/Maxim Smirnov/NetworkClient)
-[![Version](https://img.shields.io/cocoapods/v/NetworkClient.svg?style=flat)](http://cocoapods.org/pods/NetworkClient)
-[![License](https://img.shields.io/cocoapods/l/NetworkClient.svg?style=flat)](http://cocoapods.org/pods/NetworkClient)
-[![Platform](https://img.shields.io/cocoapods/p/NetworkClient.svg?style=flat)](http://cocoapods.org/pods/NetworkClient)
+[![Version](https://img.shields.io/cocoapods/v/PagerControl.svg?style=flat)](http://cocoadocs.org/docsets/PagerControl/)
+[![License](https://img.shields.io/cocoapods/l/PagerControl.svg?style=flat)](https://github.com/ElaWorkshop/PagerControl/blob/master/LICENSE)
 
-## Example
+Simple and highly customizable iOS page control, in Swift.
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-## Requirements
 
-add source 'git@git.finch.fm:Finch-iOS/finch-ios-pod-specs.git' at pod file  
-don't forget to intall ssh on the computer
+## Usage
+
+You can create facades above StripeCell or ImageTitleCell or use them directly. Everything what you need, you can find in the [Example](https://github.com/Atimca/PagerControl/tree/master/Example/Example) folder.
 
 ## Installation
 
-NetworkClient is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+Use [CocoaPods](https://github.com/CocoaPods/CocoaPods):
 
 ```ruby
-pod 'NetworkClient'
+pod 'PagerControl'
 ```
 
-## Author
+Or drag **Source** folder into your project.
 
-Maxim Smirnov, atimca@gmail.com
+## Contribution
+
+Pull requests are welcome! If you want to do something big, please open an issue to let me know first.
 
 ## License
 
-NetworkClient is available under the MIT license. See the LICENSE file for more info.
+PagerControl is available under the MIT license. See the [LICENSE](https://github.com/Atimca/PagerControl/blob/master/LICENSE) file for more info.
