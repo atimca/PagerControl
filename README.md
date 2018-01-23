@@ -5,7 +5,8 @@
 
 Simple and highly customizable iOS page control, in Swift.
 
-
+<a href="https://imgflip.com/gif/236w40"><img src="https://i.imgflip.com/236w40.gif" title="made at imgflip.com"/></a>
+<a href="https://imgflip.com/gif/236wcu"><img src="https://i.imgflip.com/236wcu.gif" title="made at imgflip.com"/></a>
 
 ## Usage
 
