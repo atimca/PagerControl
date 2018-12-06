@@ -12,7 +12,6 @@
 		64E878AD2016188A0026D23D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E878AB2016188A0026D23D /* Main.storyboard */; };
 		64E878AF2016188A0026D23D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64E878AE2016188A0026D23D /* Assets.xcassets */; };
 		64E878B22016188A0026D23D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64E878B02016188A0026D23D /* LaunchScreen.storyboard */; };
-		64E878BD2016188A0026D23D /* ExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E878BC2016188A0026D23D /* ExampleTests.swift */; };
 		64E878D2201619000026D23D /* PagerControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64E878CD201618A40026D23D /* PagerControl.framework */; };
 		64E878D3201619000026D23D /* PagerControl.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 64E878CD201618A40026D23D /* PagerControl.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		64E878F120161AF10026D23D /* PagerTabStripPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E878E920161AF10026D23D /* PagerTabStripPresenter.swift */; };
@@ -29,26 +28,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		64E878B92016188A0026D23D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 64E8789C2016188A0026D23D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 64E878A32016188A0026D23D;
-			remoteInfo = Example;
-		};
 		64E878CC201618A40026D23D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 64E878C7201618A40026D23D /* PagerControl.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 64E87854201607100026D23D;
 			remoteInfo = PagerControl;
-		};
-		64E878CE201618A40026D23D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 64E878C7201618A40026D23D /* PagerControl.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 64E8785D201607100026D23D;
-			remoteInfo = PagerControlTests;
 		};
 		64E878D4201619000026D23D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -82,9 +67,6 @@
 		64E878AE2016188A0026D23D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64E878B12016188A0026D23D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64E878B32016188A0026D23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		64E878B82016188A0026D23D /* ExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		64E878BC2016188A0026D23D /* ExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleTests.swift; sourceTree = "<group>"; };
-		64E878BE2016188A0026D23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64E878C7201618A40026D23D /* PagerControl.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = PagerControl.xcodeproj; path = ../PagerControl.xcodeproj; sourceTree = "<group>"; };
 		64E878E920161AF10026D23D /* PagerTabStripPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerTabStripPresenter.swift; sourceTree = "<group>"; };
 		64E878EB20161AF10026D23D /* PagerTabStripModuleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerTabStripModuleManager.swift; sourceTree = "<group>"; };
@@ -110,13 +92,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64E878B52016188A0026D23D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -124,7 +99,6 @@
 			isa = PBXGroup;
 			children = (
 				64E878A62016188A0026D23D /* Example */,
-				64E878BB2016188A0026D23D /* ExampleTests */,
 				64E878A52016188A0026D23D /* Products */,
 				64E878C7201618A40026D23D /* PagerControl.xcodeproj */,
 				B448A93F1836E621B84CE23A /* Pods */,
@@ -136,7 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				64E878A42016188A0026D23D /* Example.app */,
-				64E878B82016188A0026D23D /* ExampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -155,20 +128,10 @@
 			path = Example;
 			sourceTree = "<group>";
 		};
-		64E878BB2016188A0026D23D /* ExampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				64E878BC2016188A0026D23D /* ExampleTests.swift */,
-				64E878BE2016188A0026D23D /* Info.plist */,
-			);
-			path = ExampleTests;
-			sourceTree = "<group>";
-		};
 		64E878C8201618A40026D23D /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				64E878CD201618A40026D23D /* PagerControl.framework */,
-				64E878CF201618A40026D23D /* PagerControlTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -260,7 +223,6 @@
 				64E878A22016188A0026D23D /* Resources */,
 				64E878D6201619000026D23D /* Embed Frameworks */,
 				072E31AA24499EDA64D81A6B /* [CP] Embed Pods Frameworks */,
-				A54EADF80BF88FFE147A77E3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,24 +234,6 @@
 			productReference = 64E878A42016188A0026D23D /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
-		64E878B72016188A0026D23D /* ExampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 64E878C42016188A0026D23D /* Build configuration list for PBXNativeTarget "ExampleTests" */;
-			buildPhases = (
-				64E878B42016188A0026D23D /* Sources */,
-				64E878B52016188A0026D23D /* Frameworks */,
-				64E878B62016188A0026D23D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				64E878BA2016188A0026D23D /* PBXTargetDependency */,
-			);
-			name = ExampleTests;
-			productName = ExampleTests;
-			productReference = 64E878B82016188A0026D23D /* ExampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -297,17 +241,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Maxim Smirnov";
 				TargetAttributes = {
 					64E878A32016188A0026D23D = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
-					};
-					64E878B72016188A0026D23D = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 64E878A32016188A0026D23D;
 					};
 				};
 			};
@@ -331,7 +271,6 @@
 			projectRoot = "";
 			targets = (
 				64E878A32016188A0026D23D /* Example */,
-				64E878B72016188A0026D23D /* ExampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -342,13 +281,6 @@
 			fileType = wrapper.framework;
 			path = PagerControl.framework;
 			remoteRef = 64E878CC201618A40026D23D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		64E878CF201618A40026D23D /* PagerControlTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = PagerControlTests.xctest;
-			remoteRef = 64E878CE201618A40026D23D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -364,13 +296,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64E878B62016188A0026D23D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -380,28 +305,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A54EADF80BF88FFE147A77E3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		AE27D7A1105A7D91A3F20632 /* [CP] Check Pods Manifest.lock */ = {
@@ -410,13 +323,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -441,22 +357,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64E878B42016188A0026D23D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				64E878BD2016188A0026D23D /* ExampleTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		64E878BA2016188A0026D23D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 64E878A32016188A0026D23D /* Example */;
-			targetProxy = 64E878B92016188A0026D23D /* PBXContainerItemProxy */;
-		};
 		64E878D5201619000026D23D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PagerControl;
@@ -498,6 +401,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -505,6 +409,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -555,6 +460,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -562,6 +468,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -604,7 +511,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MS.PagerControl.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -622,42 +529,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = MS.PagerControl.Example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		64E878C52016188A0026D23D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KSPVBX34L6;
-				INFOPLIST_FILE = ExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MS.ExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
-			};
-			name = Debug;
-		};
-		64E878C62016188A0026D23D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KSPVBX34L6;
-				INFOPLIST_FILE = ExampleTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MS.ExampleTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Example.app/Example";
 			};
 			name = Release;
 		};
@@ -678,15 +551,6 @@
 			buildConfigurations = (
 				64E878C22016188A0026D23D /* Debug */,
 				64E878C32016188A0026D23D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		64E878C42016188A0026D23D /* Build configuration list for PBXNativeTarget "ExampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				64E878C52016188A0026D23D /* Debug */,
-				64E878C62016188A0026D23D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -33,11 +33,11 @@ class PagerTabStripViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        guard childViews.count != childViewControllers.count else {
+        guard childViews.count != children.count else {
             return
         }
         
-        childViewControllers.forEach { addChild(view: $0.view) }
+        children.forEach { addChild(view: $0.view) }
         
         let gestureLine = UIView()
         gestureLine.backgroundColor = .clear
@@ -45,7 +45,7 @@ class PagerTabStripViewController: UIViewController {
         gestureLine.autoPinEdgesToSuperviewEdges(with: .zero, excludingEdge: .right)
         gestureLine.autoSetDimension(.width, toSize: 10.0)
     
-        slideView.map{ view.bringSubview(toFront: $0) }
+        slideView.map{ view.bringSubviewToFront($0) }
         
     }
     
@@ -109,8 +109,8 @@ extension PagerTabStripViewController: PagerTabStripViewInput {
     
     func add(childViewController: UIViewController) {
         
-        addChildViewController(childViewController)
-        childViewController.didMove(toParentViewController: self)
+        addChild(childViewController)
+        childViewController.didMove(toParent: self)
         
     }
     

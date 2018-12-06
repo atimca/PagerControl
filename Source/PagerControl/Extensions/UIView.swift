@@ -60,14 +60,14 @@ extension UIView {
     func autoPinEdgesToSuperviewEdges() {
         
         translatesAutoresizingMaskIntoConstraints = false
-        allEdges.flatMap{ superviewConstraint(for: $0) }.forEach{ $0.isActive = true }
+        allEdges.compactMap{ superviewConstraint(for: $0) }.forEach{ $0.isActive = true }
         
     }
     
     func autoPinEdgesToSuperviewEdges(excludingEdge: Edge) {
         
         translatesAutoresizingMaskIntoConstraints = false
-        allEdges.filter{ $0 != excludingEdge }.flatMap{ superviewConstraint(for: $0) }.forEach{ $0.isActive = true }
+        allEdges.filter{ $0 != excludingEdge }.compactMap{ superviewConstraint(for: $0) }.forEach{ $0.isActive = true }
         
     }
     

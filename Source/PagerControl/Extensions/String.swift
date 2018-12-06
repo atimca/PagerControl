@@ -12,7 +12,7 @@ extension String {
     
     func widthOfString(usingFont font: UIFont) -> CGFloat {
         
-        let fontAttributes = [NSAttributedStringKey.font: font]
+        let fontAttributes = [NSAttributedString.Key.font: font]
         let size = self.size(withAttributes: fontAttributes)
         let width: CGFloat = CGFloat(ceilf(Float(size.width)))
         

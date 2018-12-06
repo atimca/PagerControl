@@ -122,7 +122,7 @@ open class PagerControlView: UIView {
         
         selectedItem = index
         
-        let scrollPosition: UICollectionViewScrollPosition
+        let scrollPosition: UICollectionView.ScrollPosition
         
         switch index {
             

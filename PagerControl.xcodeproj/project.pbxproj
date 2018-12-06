@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		64E8785E201607100026D23D /* PagerControl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64E87854201607100026D23D /* PagerControl.framework */; };
-		64E87863201607100026D23D /* PagerControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E87862201607100026D23D /* PagerControlTests.swift */; };
 		64E87865201607100026D23D /* PagerControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 64E87857201607100026D23D /* PagerControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		64E878822016080D0026D23D /* StripeCellPagerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E878712016080D0026D23D /* StripeCellPagerModel.swift */; };
 		64E878832016080D0026D23D /* StripeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E878722016080D0026D23D /* StripeCell.swift */; };
@@ -28,23 +26,10 @@
 		64E8790B201625240026D23D /* PagerControlLineDealerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E8790A201625240026D23D /* PagerControlLineDealerModel.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		64E8785F201607100026D23D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 64E8784B201607100026D23D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 64E87853201607100026D23D;
-			remoteInfo = PagerControl;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		64E87854201607100026D23D /* PagerControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PagerControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64E87857201607100026D23D /* PagerControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PagerControl.h; sourceTree = "<group>"; };
 		64E87858201607100026D23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		64E8785D201607100026D23D /* PagerControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PagerControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		64E87862201607100026D23D /* PagerControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PagerControlTests.swift; sourceTree = "<group>"; };
-		64E87864201607100026D23D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		64E878712016080D0026D23D /* StripeCellPagerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StripeCellPagerModel.swift; sourceTree = "<group>"; };
 		64E878722016080D0026D23D /* StripeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StripeCell.swift; sourceTree = "<group>"; };
 		64E878742016080D0026D23D /* ImageTitleCellPagerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTitleCellPagerModel.swift; sourceTree = "<group>"; };
@@ -71,14 +56,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64E8785A201607100026D23D /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				64E8785E201607100026D23D /* PagerControl.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -87,7 +64,6 @@
 			children = (
 				64E8786E201607EC0026D23D /* Source */,
 				64E87856201607100026D23D /* Supporting Files */,
-				64E87861201607100026D23D /* Tests */,
 				64E87855201607100026D23D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,7 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				64E87854201607100026D23D /* PagerControl.framework */,
-				64E8785D201607100026D23D /* PagerControlTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -108,15 +83,6 @@
 				64E87858201607100026D23D /* Info.plist */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		64E87861201607100026D23D /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				64E87862201607100026D23D /* PagerControlTests.swift */,
-				64E87864201607100026D23D /* Info.plist */,
-			);
-			path = Tests;
 			sourceTree = "<group>";
 		};
 		64E8786E201607EC0026D23D /* Source */ = {
@@ -238,24 +204,6 @@
 			productReference = 64E87854201607100026D23D /* PagerControl.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		64E8785C201607100026D23D /* PagerControlTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 64E8786B201607100026D23D /* Build configuration list for PBXNativeTarget "PagerControlTests" */;
-			buildPhases = (
-				64E87859201607100026D23D /* Sources */,
-				64E8785A201607100026D23D /* Frameworks */,
-				64E8785B201607100026D23D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				64E87860201607100026D23D /* PBXTargetDependency */,
-			);
-			name = PagerControlTests;
-			productName = PagerControlTests;
-			productReference = 64E8785D201607100026D23D /* PagerControlTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -263,15 +211,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Maxim Smirnov";
 				TargetAttributes = {
 					64E87853201607100026D23D = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
-					64E8785C201607100026D23D = {
-						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -289,20 +234,12 @@
 			projectRoot = "";
 			targets = (
 				64E87853201607100026D23D /* PagerControl */,
-				64E8785C201607100026D23D /* PagerControlTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		64E87852201607100026D23D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		64E8785B201607100026D23D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -335,23 +272,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64E87859201607100026D23D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				64E87863201607100026D23D /* PagerControlTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		64E87860201607100026D23D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 64E87853201607100026D23D /* PagerControl */;
-			targetProxy = 64E8785F201607100026D23D /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		64E87866201607100026D23D /* Debug */ = {
@@ -368,6 +289,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -375,6 +297,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -428,6 +351,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -435,6 +359,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -484,7 +409,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MS.PagerControl;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -506,37 +431,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = MS.PagerControl;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		64E8786C201607100026D23D /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KSPVBX34L6;
-				INFOPLIST_FILE = PagerControlTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MS.PagerControlTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		64E8786D201607100026D23D /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = KSPVBX34L6;
-				INFOPLIST_FILE = PagerControlTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = MS.PagerControlTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -558,15 +453,6 @@
 			buildConfigurations = (
 				64E87869201607100026D23D /* Debug */,
 				64E8786A201607100026D23D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		64E8786B201607100026D23D /* Build configuration list for PBXNativeTarget "PagerControlTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				64E8786C201607100026D23D /* Debug */,
-				64E8786D201607100026D23D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
