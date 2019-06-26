@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 open class PagerControlView: UIView {
     
     // MARK: - Properties
+    
+    private let delegateEvents = PublishSubject<Event>()
     
     private var collectionView: UICollectionView!
     
@@ -43,17 +47,17 @@ open class PagerControlView: UIView {
     private var viewModel: PagerControlViewModel?
     
     // MARK: - LifeCircle
-
+    
     override open func layoutSubviews() {
         super.layoutSubviews()
-
+        
         let cellFrame = collectionView?.cellForItem(at: IndexPath(row: selectedItem, section: 0))?.frame
         guard frame.width != 0.0, cellFrame == nil else {
             return
         }
-
-       setupLine()
-
+        
+        setupLine()
+        
     }
     
     // MARK: - init
@@ -177,14 +181,17 @@ extension PagerControlView: UICollectionViewDelegateFlowLayout {
         scroll(toIndex: indexPath.item)
         
         delegate?.didSwitchToItem(withIndex: selectedItem)
+        delegateEvents.onNext(.switchedToItem(index: selectedItem))
         //call delegate after animation
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.3) {
             self.delegate?.didSwitchToItemAfterAnimation(withIndex: self.selectedItem)
+            self.delegateEvents.onNext(.switchedToItemAfterAnimation(index: self.selectedItem))
         }
-        
     }
     
-    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    public func collectionView(_ collectionView: UICollectionView,
+                               layout collectionViewLayout: UICollectionViewLayout,
+                               sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         guard let viewModel = viewModel else {
             return .zero
@@ -196,7 +203,6 @@ extension PagerControlView: UICollectionViewDelegateFlowLayout {
         
         return CGSize(width: setupWidth, height: collectionView.frame.height)
     }
-    
 }
 
 //MARK: - UICollectionViewDataSource
@@ -249,3 +255,16 @@ extension PagerControlView: UICollectionViewDataSource {
     }
     
 }
+
+// MARK: - Emitable
+extension PagerControlView {
+    enum Event {
+        case switchedToItem(index: Int)
+        case switchedToItemAfterAnimation(index: Int)
+    }
+    
+    var events: ControlEvent<Event> {
+        return ControlEvent(events: delegateEvents)
+    }
+}
+
