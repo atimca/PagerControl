@@ -257,7 +257,7 @@ extension PagerControlView: UICollectionViewDataSource {
 }
 
 // MARK: - Emitable
-extension PagerControlView {
+public extension PagerControlView {
     enum Event {
         case switchedToItem(index: Int)
         case switchedToItemAfterAnimation(index: Int)
