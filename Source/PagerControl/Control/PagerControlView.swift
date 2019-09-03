@@ -80,6 +80,8 @@ open class PagerControlView: UIView {
         
         let flow = UICollectionViewFlowLayout()
         flow.scrollDirection = .horizontal
+        flow.minimumInteritemSpacing = 0
+        flow.minimumLineSpacing = 0        
         
         let collectionView = UICollectionView(frame: frame, collectionViewLayout: flow)
         addSubview(collectionView)
